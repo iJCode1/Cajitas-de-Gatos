@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav {
+    background-color: #7ACC2D;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.nav__logo img{
+    vertical-align: middle;
+}
+
+.nav ol{
+    list-style: none;
+    display: flex;
+}
+
+.nav ol li a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.nav ol li a:hover{
+    color: white;
+    text-decoration: underline;
+}
