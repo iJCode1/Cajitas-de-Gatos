@@ -1,5 +1,7 @@
 :root{
-    --primary-color: #7ACC2D;
+    --primary-color: hsl(91, 64%, 49%);
+    --white: #ffffff;
+    --padding: 20px;
 }
 
 *{
@@ -17,7 +19,7 @@ body{
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: var(--padding);
 }
 
 .nav__logo img{
@@ -32,12 +34,12 @@ body{
 .nav ol li a{
     color: rgb(32, 32, 32);
     font-size: 18px;
-    padding-left: 20px;
+    padding-left: var(--padding);
     text-decoration: none;
 }
 
 .nav ol li a:hover{
-    color: white;
+    color: var(--white);
     text-decoration: underline;
 }
 
@@ -46,7 +48,7 @@ body{
     max-width: 60%;
     margin: 0 auto;
     margin-top: 10%;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     text-align: center;
 }
 
@@ -54,20 +56,23 @@ body{
     background-image: url('../assets/curve.png');
     background-size: cover;
     background-position: center top;
-    height: 400px;
+    height: 100px;
+    padding: 12%;
     /* height: 200px;
-    padding: 20px;
+    padding: var(--padding);
     display: flex; */
 }
 
 .cards{
     display: flex;
     justify-content: center;
+    margin-top: -250px; 
 }
 
 .card{
-    background-color: white;
-    box-shadow: 4px 1px 20px rgb(151, 151, 151);
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 4px 1px var(--padding) rgb(151, 151, 151);
     margin: 15px;
     padding: 10px;
     width: 250px;
@@ -86,12 +91,18 @@ body{
 
 .card__button{
     background-color: var(--primary-color);
-    color: white;
+    border-radius: 2px;
+    color: var(--white);
+    cursor: pointer;
     display: inline-block;
     height: 30px;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: var(--padding);
     text-align: center;
     text-decoration: none;
     width: 100%;
+}
+
+.card__button:hover{
+    background-color: #659c31;
 }
