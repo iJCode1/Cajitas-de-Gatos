@@ -1,0 +1,52 @@
+.nav{
+    flex-direction: column;
+    height: auto;
+}
+
+.nav__logo img{
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.main__title{
+    font-size: 24px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.cards{
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.products{
+    background-image: none;
+    height: auto;
+    padding: 10% 0;
+}
+
+.qualities__wrapper,
+.mentions__cards--wrapper{
+    grid-template-columns: 1fr;
+}
+
+.qualities__wrapper{
+    margin-top: 40px;
+    width: 90%;
+}
+
+.qualitie{
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px){
+    .mentions__cards--wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
