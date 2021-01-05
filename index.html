@@ -5,6 +5,7 @@
     <meta name="description" content="Venta de Cajas de Gatitos" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iJCode - Cajas de Gatos</title>
+    <link rel="shortcut icon" href="./assets/b2.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -12,9 +13,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 800px)"/>
+    <link rel="stylesheet" href="./css/animations.css">
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav fadeInDown">
       <div class="nav__logo">
         <img src="./assets/logo.png" alt="Logo Proyecto" />
       </div>
@@ -29,12 +31,12 @@
     </nav>
 
     <main class="main">
-      <h2 class="main__title">
+      <h2 class="main__title fadeIn">
         Este es un producto increíble, no se que haces viendo que lo puedes
         tener.
       </h2>
       <div class="products">
-        <div class="cards">
+        <div class="cards fadeInUp">
           <div class="card">
             <figure class="card__image">
               <img src="./assets/box1.png" alt="Caja 1" />
@@ -162,7 +164,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="fadeInUp">
       <p>Términos y Condiciones</p>
       <p>contacto@mail.com</p>
     </footer>
