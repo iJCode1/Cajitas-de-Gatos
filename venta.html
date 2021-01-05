@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Productos de mi sitio web de venta de cajas de gatitos"
+    />
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0" />
+    <title>iJCode - Productos</title>
+    <link rel="shortcut icon" href="./assets/b2.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width: 800px)"
+    />
+  </head>
+  <body>
+    <nav class="nav fadeInDown">
+      <div class="nav__logo">
+        <a href="./index.html">
+          <img src="./assets/logo.png" alt="Logo Proyecto" />
+        </a>
+      </div>
+      <ol>
+        <li>
+          <a href="#">Faqs</a>
+        </li>
+        <li>
+          <a href="./products.html">Producto y Descripción</a>
+        </li>
+      </ol>
+    </nav>
+    <section class="container">
+      <div class="row">
+        <div class="card__product col-4">
+          <figure>
+            <img src="./assets/ben1.png" alt="product image" />
+          </figure>
+          <div class="product__text">
+            <h2>Producto 1</h2>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+          </div>
+        </div>
+        <div class="card__form col-8">
+          <form
+            class="product__form"
+            target="paypal"
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+          >
+            <label for="name">Nombre</label>
+            <br />
+            <input type="text" name="name" />
+            <br />
+            <label for="email">Mail</label>
+            <br />
+            <input type="email" name="email" />
+            <br />
+            <label for="phone">Telefono</label>
+            <br />
+            <input type="tel" name="phone" />
+            <br />
+            <input type="submit" value="Confirmar pago" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="fadeInUp">
+      <p>Términos y Condiciones</p>
+      <p>contacto@mail.com</p>
+    </footer>
+  </body>
+</html>
