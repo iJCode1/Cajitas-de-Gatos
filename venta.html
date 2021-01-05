@@ -13,9 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="./css/mobile.css"
@@ -38,7 +38,7 @@
         </li>
       </ol>
     </nav>
-    <section class="container">
+    <section class="container payment">
       <div class="row">
         <div class="card__product col-4">
           <figure>
@@ -52,26 +52,25 @@
             </p>
           </div>
         </div>
-        <div class="card__form col-8">
+        <div class="card__form col-6">
           <form
             class="product__form"
-            target="paypal"
-            action="https://www.paypal.com/cgi-bin/webscr"
+            action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9ZR6DQMWS67JS"
             method="post"
           >
             <label for="name">Nombre</label>
             <br />
-            <input type="text" name="name" />
+            <input class="form__input" type="text" name="name" id="name" required/>
             <br />
             <label for="email">Mail</label>
             <br />
-            <input type="email" name="email" />
+            <input class="form__input" type="email" name="email" id="email" required/>
             <br />
             <label for="phone">Telefono</label>
             <br />
-            <input type="tel" name="phone" />
+            <input class="form__input" type="tel" name="phone" id="phone" required/>
             <br />
-            <input type="submit" value="Confirmar pago" />
+            <input class="card__button" type="submit" value="Confirmar pago" />
           </form>
         </div>
       </div>
