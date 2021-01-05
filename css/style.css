@@ -195,3 +195,27 @@ footer{
     margin-top: 55px;
     padding: 0 20px;
 }
+
+/*----------------- Products -------------- */
+.row{
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.products__title{
+    font-size: 30px;
+    margin-top: 10%;
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+.products--wrap img{
+    width: 220px;
+    height: 220px;
+}
+
+.products--wrap .p3{
+    width: 170px;
+    height: 170px;
+}
+

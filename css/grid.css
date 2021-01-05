@@ -70,6 +70,6 @@
     width: calc(var(--col-width)*12);
 }
 
-[class*="col-"]{
+/* [class*="col-"]{
     padding: 10px;
-}
+} */

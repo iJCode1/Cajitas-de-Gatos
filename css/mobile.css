@@ -45,8 +45,46 @@
     margin-bottom: 20px;
 }
 
+
+
+/* -------------- products ---------------- */
+
+.products__title{
+    padding-left: 20px;
+}
+
+.row{
+    display: inherit;
+}
+
+.row figure, 
+.products__text{
+    margin: 0 auto;
+}
+
+.products--wrap img{
+    width: 100px;
+    height: 100px;
+}
+
+.products--wrap .p3{
+    width: 80px;
+    height: 80px;
+}
+
+
 @media screen and (min-width: 600px){
     .mentions__cards--wrapper{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products--wrap img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .products--wrap .p3{
+        width: 150px;
+        height: 150px;
     }
 }
