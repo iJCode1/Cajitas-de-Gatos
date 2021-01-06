@@ -116,6 +116,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 160px;
     width: 70%;
@@ -169,6 +170,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    justify-content: center;
     margin-bottom: 60px;
 }
 
@@ -222,6 +224,7 @@ footer a{
 .product2{
     align-items: center;
     display: grid;
+    gap: var(--padding);
     justify-content: center;
 }
 
@@ -251,6 +254,7 @@ footer a{
 .payment{
     align-items: center;
     display: flex;
+    justify-content: center;
     min-height: calc(100vh - 120px);
 }
 
@@ -321,7 +325,7 @@ footer a{
 .faqs__container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--padding);
+    gap: 10px;
     margin: 0 auto;
     width: 80%;
 }
@@ -330,4 +334,8 @@ footer a{
     font-size: 30px;
     margin-top: calc(var(--padding)*2);
     margin-bottom: calc(var(--padding)*2);
+}
+
+.faqs__text{
+    margin-bottom: var(--padding);
 }

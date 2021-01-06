@@ -1,3 +1,7 @@
+:root{
+    --gap: 40px;
+}
+
 .nav{
     flex-direction: column;
     height: auto;
@@ -20,9 +24,11 @@
 }
 
 .cards{
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0px;
+    /* align-items: center;
+    flex-direction: column;*/
+    grid-template-columns: .8fr;
+    gap: var(--gap);
+    margin-top: 0px; 
 }
 
 .products{
@@ -33,11 +39,12 @@
 
 .qualities__wrapper,
 .mentions__cards--wrapper{
-    grid-template-columns: 1fr;
+    grid-template-columns: .8fr;
 }
 
 .qualities__wrapper{
-    margin-top: 40px;
+    gap: 30px;
+    margin-top: var(--gap);
     width: 90%;
 }
 
@@ -72,6 +79,15 @@
     height: 80px;
 }
 
+
+/* -------------- Venta ---------------- */
+.sale__cards{
+    grid-template-columns: .9fr;
+    gap: var(--gap);
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+}
+
 @media screen and (max-width: 500px){
     .payment__container img{
         width: 120px;
@@ -83,9 +99,26 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .products--wrap{
+        gap: 60px;
+    }
+
+    .product1:nth-last-child(1){
+        margin-bottom: 50px;
+    }
+}
+
+
 @media screen and (min-width: 600px){
-    .mentions__cards--wrapper{
+    .cards{
+        grid-template-columns: .6fr;
+    }
+
+    .mentions__cards--wrapper, 
+    .qualities__wrapper{
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
 
     .products--wrap img{
