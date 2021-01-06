@@ -84,6 +84,7 @@
 .sale__cards{
     grid-template-columns: .9fr;
     gap: var(--gap);
+    justify-content: center;
     margin-top: var(--gap);
     margin-bottom: var(--gap);
 }
